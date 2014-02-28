@@ -1,0 +1,24 @@
+Author: Ryan Houlihan
+
+Lammps Lattice dump file Producer
+
+Usage: LatPro [-FLAG] [ARGUMENT]
+FLAG: 
+       [-s fileName]                                 :: read in an sph file to fit to the given lattice 
+       [-a xMin xMax yMin yMax zMin zMax]            :: read in dimensions 
+       [-o1 fileName]                                :: output Gran Region 
+       [-o2 fileName]                                :: output Grass Region
+       [-r radiusVal]                                :: radius value 
+       [-v radiHigh radiMid1 radiMid2 radiLow]       :: variable sized radius
+       [-w] 				               :: wiggle
+       [-t]                                          :: transform vectors 
+       [-h]                                          :: hybrid style
+       [-d density]                                  :: atom density
+       [-g scalefactor cutoff sphereSep]             :: scalefactor (fraction to reduce diameter by)
+                                                        cutoff (smallest radius allowed)
+                                                        sphereSep (sphere seperation distance in meters)
+       [-R]                                          :: Randomly varry grass size by scaleFactor
+
+
+ Grass Example: latPro -a -.05 .05 -.05 .05 0 .05 -r .005 -g .75 .0025 .00001 -d 100 -o2 GrassTest
+ Gran Example:  latPro -s rock.txt -a -.08 .08 -.08 .08 0 .40 -r .0025 -d 2060 -w -t -o1 RigidGranTest

@@ -1,3 +1,8 @@
+/* Author: Ryan Houlihan                                                                                
+ *                                                                                                      
+ * Produces a bed of grass
+ *                                                                                                      
+ */
 #include "INCLUDE/GrassPro.h"
 #include "INCLUDE/LatUtil.h"
 

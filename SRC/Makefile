@@ -1,3 +1,5 @@
+# Author: Ryan Houlihan
+
 SHELL = /bin/sh
 
 # ------ FILES ------

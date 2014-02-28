@@ -1,3 +1,9 @@
+/* Author: Ryan Houlihan
+ *
+ * Produces a granular lattic
+ *
+ */
+
 #include "INCLUDE/GranPro.h"
 
 GranPro::GranPro(double *dim_in, double *radius_in, string dataFName_in, 
